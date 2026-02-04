@@ -49,3 +49,248 @@ ol {
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background-color: #D9D9D9;
 }
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 711px 399px;
+  column-gap: 30px;
+  min-width: 1140px;
+  align-items: end;
+}
+
+.result {
+   height: 456px;
+  
+}
+
+.content__details {
+  height: 534px;
+  
+}
+
+.result__video {
+  object-fit: fill;
+  width: 711px;
+  height: 386px;
+}
+
+.search-form {
+  margin-top: 16px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.search-form__fieldset-title {
+font-weight: 400;
+font-family: 'Fira Sans Condensed';
+font-size: 18px;
+line-height: 18px;
+}
+
+.title {
+  font-size: 75px;
+  line-height: calc(75px /100 * 94);
+  text-transform: uppercase;
+  font-style: bold;
+  font-family: Oswald;
+}
+
+.content__accent {
+  color: #545050;
+}
+
+.content__list-container {
+  margin-top: 26px;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+.content__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.content__list-item {
+  padding: 0 3px;
+}
+
+.content__video-card {
+  display: flex;
+
+}
+.content__card-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.content__video-card-thumbnail {
+  width: 194px;
+  height: 103px;
+  object-fit: contain;
+  object-position: center;
+}
+.content__video-card-description-container {
+  flex-grow: 1;
+}
+
+
+.content__video-card-title {
+  text-transform: uppercase;
+  font-family: Oswald;
+font-weight: 700;
+font-size: 30px;
+max-width: 201px;
+ white-space: nowrap;      
+  overflow: hidden;        
+  text-overflow: ellipsis;  
+}
+
+.content__video-card-description {
+  font-family: 'Fira Sans Condensed';
+font-weight: 400;
+font-size: 18px;
+line-height: 16.2px;
+max-width: 201px;
+overflow: hidden;         
+text-overflow: ellipsis; 
+display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 4;
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.search-form__label {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+}
+
+.search-form__fieldset {
+  border: none;
+}
+
+.search-form__textfield {
+  color: #fff;
+  width: 225px;
+  margin-top: 5px;
+  font-family: 'Fira Sans Condensed';
+  font-weight: 400;
+  font-size: 18px;
+  border: none;
+  color: #fff;
+  background-color: transparent;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding: 2.5px 0;
+  appearance: none;
+  outline: none;
+}
+
+.search-form__textfield::placeholder {
+  color: #fff;
+  opacity: 0.7;
+}
+
+.search-form__textfield::-moz-placeholder {
+  color: #fff;
+  opacity: 0.7;
+}
+
+
+.search-form__checkbox-list {
+  display: flex;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+.search-form__pseudo-checkbox {
+  margin-top: 1px;
+  border: 2px solid #fff;
+  width: 19px;
+  height: 19px;
+  margin-right: 5px;
+  
+}
+
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
+  display: block;
+  content: ' ';
+  
+  margin: 1px;
+  height: 13px;
+  width: 13px;
+  background-color: #fff;
+}
+
+.search-form__label:hover > .search-form__label-text {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.button {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-family: 'Fira Sans Condensed';
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+}
+
+.button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.button:active {
+  background-color: #545050;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: auto   ;
+}
+
+.search-form__submit-button{
+  padding: 6px 74px;
+}
+
+.more-button {
+  padding: 6px 142px;
+  width: 100%;
+}
+
+.content__video-card:hover {
+  text-decoration: underline;
+}
+
+.content__video-card:active {
+  background-color: #545050;
+}
+
+.result__video-container {
+  position: relative;
+}
+
+.content__list-container {
+  position: relative;
+}
